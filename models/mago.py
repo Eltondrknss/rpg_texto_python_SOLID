@@ -1,4 +1,4 @@
-from models.personagem import Personagem
+from .personagem import Personagem
 
 class Mago(Personagem):
     def atacar(self, outro):
