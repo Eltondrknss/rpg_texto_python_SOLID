@@ -1,6 +1,6 @@
 from .personagem import Personagem
 
-class Arqueiro(Personagem):
+class Arqueiro(Personagem):    #Arqueiro(nome, 90, 35, 25)
     def atacar(self, outro):
         from random import randint
         critico = randint(1,10) == 1

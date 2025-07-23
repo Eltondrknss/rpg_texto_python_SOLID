@@ -1,6 +1,6 @@
 from .personagem import Personagem
 
-class Guerreiro(Personagem):
+class Guerreiro(Personagem):    #Guerreiro(nome, 120, 30, 30)
     def atacar(self, outro):
         dano = self.ataque - (outro.defesa // 2)
         if dano > 0:
