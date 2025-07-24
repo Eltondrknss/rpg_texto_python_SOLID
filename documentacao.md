@@ -1,25 +1,8 @@
-# Documentação Completa - RPG de Texto Python
-
-## Índice
-
-- [Descrição Geral](#descrição-geral)
-- [Funcionalidades](#funcionalidades)
-- [Estrutura do Projeto](#estrutura-do-projeto)
-- [Detalhamento das Classes](#detalhamento-das-classes)
-  - [Personagem](#personagem)
-  - [Guerreiro](#guerreiro)
-  - [Mago](#mago)
-  - [Arqueiro](#arqueiro)
-- [Fluxo do Jogo](#fluxo-do-jogo)
-- [Princípios SOLID](#princípios-solid)
-- [Execução](#execução)
-- [Sugestões de Expansão](#sugestões-de-expansão)
-- [Licença](#licença)
-- [Autor](#autor)
+# Documentação Completa - RPG de Texto Python (SOLID)
 
 ---
 
-## 📖 Descrição Geral
+## Descrição Geral
 
 Este projeto é um RPG de texto desenvolvido em Python, com foco em boas práticas de programação orientada a objetos e princípios SOLID. O jogador pode escolher entre diferentes classes de herói e enfrentar batalhas automáticas contra inimigos gerados pelo sistema. O jogo é totalmente executado no terminal, com mensagens temáticas e feedbacks dinâmicos.
 
@@ -136,13 +119,13 @@ Herdados de Personagem.
 
 ---
 
-## 🚀=Execução
+## Execução
 
 1. Instale Python 3.x em seu computador.
 2. Clone o repositório:
 
 ```bash
-git clone https://github.com/Eltondrknss/rpg-texto-python.git
+git clone https://github.com/Eltondrknss/rpg_texto_python_SOLID
 ```
 
 3. Entre na pasta do projeto:

@@ -1,67 +1,92 @@
-# RPG de Texto com Python
+## Descrição Geral
 
-Projeto simples feito em Python, onde o jogador escolhe uma classe (Mago, Guerreiro ou Arqueiro) e enfrenta batalhas automáticas em estilo RPG de texto.
-
----
-
-## 🎮 Como funciona
-
-Ao iniciar o programa:
-
-1. O jogador digita seu nome.
-2. Escolhe sua classe preferida.
-3. Um inimigo é gerado.
-4. Os dois personagens lutam até que um deles morra.
-
-Tudo acontece no terminal, com mensagens temáticas pra cada classe.
+Este projeto é um RPG de texto desenvolvido em Python, com foco em boas práticas de programação orientada a objetos e princípios SOLID. O jogador pode escolher entre diferentes classes de herói e enfrentar batalhas automáticas contra inimigos gerados pelo sistema. O jogo é totalmente executado no terminal, com mensagens temáticas e feedbacks dinâmicos.
 
 ---
 
-## 🚀 Como executar o projeto
+## Funcionalidades
 
-1. Clone o repositório:
+- Escolha de nome e classe do personagem (Mago, Guerreiro ou Arqueiro).
+- Geração automática de inimigos.
+- Sistema de batalha por turnos, com cálculo de dano e defesa.
+- Mensagens temáticas para cada ação.
+- Encapsulamento dos atributos dos personagens.
+- Fácil expansão para novas classes e mecânicas.
+- Código modular e organizado.
 
-git clone https://github.com/Eltondrknss/rpg-texto-python.git
+---
 
-2. Entre na pasta do projeto:
+## Estrutura do Projeto
 
+```
+RPG_SOLID/
+│
+├── main.py                # Ponto de entrada do jogo
+├── models/
+│   ├── personagem.py      # Classe base Personagem
+│   ├── guerreiro.py       # Classe Guerreiro
+│   ├── mago.py            # Classe Mago
+│   ├── arqueiro.py        # Classe Arqueiro
+│   └── ...                # Outras classes e utilitários
+├── README.md              # Guia rápido do projeto
+├── documentacao.md        # Documentação detalhada
+```
+
+
+---
+
+## Classes
+
+### Personagem
+
+Classe base para todos os personagens do jogo.  
+Responsável por atributos comuns e métodos utilitários.
+
+### Guerreiro
+
+Subclasse de `Personagem`, representa o guerreiro.
+
+### Mago
+
+Subclasse de `Personagem`, representa o mago.
+
+### Arqueiro
+
+Subclasse de `Personagem`, representa o arqueiro.
+
+---
+
+## Fluxo do Jogo
+
+1. O jogador inicia o programa e digita seu nome.
+2. Escolhe uma classe de personagem.
+3. O sistema gera um inimigo automaticamente.
+4. Os personagens lutam em turnos, alternando ataques.
+5. Cada ataque calcula o dano com base nos atributos de ataque e defesa.
+6. Mensagens temáticas são exibidas a cada ação.
+7. O jogo termina quando um dos personagens morre, exibindo o resultado final.
+
+---
+
+## Execução
+
+1. Instale Python 3.x em seu computador.
+2. Clone o repositório:
+
+```bash
+git clone https://github.com/Eltondrknss/rpg_texto_python_SOLID
+```
+
+3. Entre na pasta do projeto:
+
+```bash
 cd rpg-texto-python
+```
 
-3. Execute o jogo:
+4. Execute o jogo:
 
+```bash
 python main.py
+```
 
----
-
-## 🧠 Conceitos aplicados
-
-Programação Orientada a Objetos
-
-Uso de classes e objetos
-
-Herança com subclasses
-
-Encapsulamento (atributos privados)
-
-Polimorfismo (cada classe tem seu próprio atacar())
-
-Boas práticas com Git
-
-Código versionado
-
-Commits organizados
-
-
----
-
-## 📁 Estrutura do projeto
-
-rpg-texto-python/
-
-├── main.py
-
-├── personagem.py
-
-├── classes_herois.py
-
-└── README.md
+5. Siga as instruções no terminal para jogar.
