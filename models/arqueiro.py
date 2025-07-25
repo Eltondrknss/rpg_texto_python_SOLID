@@ -1,6 +1,7 @@
 from .personagem import Personagem
 
-class Arqueiro(Personagem):    #Arqueiro(nome, 90, 35, 25)
+# arqueiro = 10% de chance de ataque crítico (dano x2)
+class Arqueiro(Personagem):
     def atacar(self, outro):
         from random import randint
         critico = randint(1,10) == 1
