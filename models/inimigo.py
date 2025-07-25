@@ -1,5 +1,6 @@
 from .personagem import Personagem
 
+# inimigo = normal
 class Inimigo(Personagem):
     def atacar(self, outro):
         dano = self.ataque - outro.defesa
