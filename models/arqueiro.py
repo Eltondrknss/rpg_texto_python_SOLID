@@ -1,13 +1,13 @@
 from .personagem import Personagem
 
-# arqueiro = 10% de chance de ataque crítico (dano x2)
+# arqueiro = 10% de chance de ataque crítico (dano x3)
 class Arqueiro(Personagem):
     def atacar(self, outro):
         from random import randint
         critico = randint(1,10) == 1
         dano = self.ataque - outro.defesa
         if critico:
-            dano *= 2
+            dano *= 3
             outro.receber_dano(dano)
             print(f"\n 🏹 {self.nome} ACERTOU UMA FLECHADA CRÍTICAAAAAAA 🏹🏹🏹 sobrou só {outro.vida} de vida pro {outro.nome}")
         elif dano > 0:
